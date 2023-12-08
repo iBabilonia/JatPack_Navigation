@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function Entrada(numero) {
+            document.getElementById('Entrada').value += numero;
+        }
+    </script>
+<script  src="taker.js" type="module"></script>
+</head>
+
+
+<body>
+
+    <div id="background">
+
+
+        <div>
+            <input type="text" id="Entrada"><p id="resultado"></p>
+        </div>
+
+        <table border="1"> 
+            
+            <div>
+
+                    <tr>
+
+                        <td><button onclick="Entrada('1')">1</button></td>
+                        <td><button onclick="Entrada('2')">2</button></td>
+                        <td><button onclick="Entrada('3')">3</button></td>
+                        <td><button onclick="Entrada('+')">+</button></td> 
+                    </tr>
+                    
+            </div>
+
+
+            <div>
+
+                    <tr>
+                        <td><button onclick="Entrada('4')">4</button></td>
+                        <td><button onclick="Entrada('5')">5</button></td>
+                        <td><button onclick="Entrada('6')">6</button></td> 
+                        <td><button onclick="Entrada('-')">-</button></td>
+                    </tr>
+
+            </div>
+
+            <div>
+
+                    <tr>
+                        <td><button onclick="Entrada('7')">7</button onclick></td>
+                        <td><button onclick="Entrada('8')">8</button></td>
+                        <td><button onclick="Entrada('9')">9</button></td> 
+                        <td><button onclick="Entrada('x')">x</button></td>
+                    </tr>
+
+            </div>        
+
+            <div>
+
+                <tr>
+                    <td ><button onclick="Entrada('0')">0</button>
+                    <td><button onclick="botaoigual('')">=</button onclick></td>
+                    <td><button onclick="Limpar('')">C</button onclick></td>    
+                    <td><button onclick="Entrada('&divide')">&divide;</button onclick></td>
+                </tr>
+                
+            </div>
+
+        </table>
+
+    </div>
+
+
+
+</body>
+
+
+</html>
